@@ -16,7 +16,11 @@
   "keywords": [
     "di lu"
   ],
-  "author": "Simon Kusterer",
+  "author": {
+    "name": "Simon Kusterer",
+    "email": "simon@sope.io",
+    "url": "http://sope.io"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/xat/lu.js/issues"
