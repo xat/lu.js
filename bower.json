@@ -1,0 +1,27 @@
+{
+  "name": "lu",
+  "version": "0.1.0",
+  "authors": [
+    "Simon Kusterer <simon@sope.io>"
+  ],
+  "description": "Lightweight dependency injection lib",
+  "main": "lu.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "lu",
+    "di"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/xat/lu.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
