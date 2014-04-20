@@ -1,6 +1,6 @@
 {
   "name": "lujs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "minimalstic di library",
   "main": "lu.js",
   "directories": {
@@ -27,6 +27,11 @@
   },
   "homepage": "https://github.com/xat/lu.js",
   "devDependencies": {
-    "expect.js": "^0.3.1"
+    "expect.js": "^0.3.1",
+    "gulp": "^3.6.1",
+    "gulp-concat": "^2.2.0"
+  },
+  "dependencies": {
+    "gulp-uglify": "^0.2.1"
   }
 }
