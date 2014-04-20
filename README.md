@@ -1,4 +1,4 @@
-### lu.js
+# lu.js
 
 Lightweight dependency injection lib written in JavaScript.
 
@@ -45,11 +45,11 @@ container(['myFactory', 'myVal'], function(myFactory, myVal) {
 
 ## Installation
 
-# Node.JS
+### Node.JS
 
 ```npm install lu.js```
 
-# Browser
+### Browser
 
 ```bower install lu```
 
