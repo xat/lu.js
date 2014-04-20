@@ -47,7 +47,7 @@ container(['myFactory', 'myVal'], function(myFactory, myVal) {
 
 ### Node.JS
 
-```npm install lu.js```
+```npm install lujs```
 
 ### Browser
 
