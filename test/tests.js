@@ -20,13 +20,18 @@ describe('di', function() {
 
     container.value('myVal', 5);
 
-    container(['myService', 'myVal', 'myPolluter'], function(myService, myVal, myPolluter) {
+    container.value('myFn', function() {
+      return 'something';
+    });
+
+    container(['myService', 'myVal', 'myFn'], function(myService, myVal, myFn) {
       expect(myService.doSomething()).to.equal('test');
       expect(myVal).to.equal(5);
+      expect(myFn()).to.equal('something');
     });
 
     expect(container.get('myVal')).to.equal(5);
-    expect(container.get('myFactory')()).not.to.equal(container.get('myFactory')());
+    expect(container.get('myFactory')).not.to.equal(container.get('myFactory'));
   });
 
 });

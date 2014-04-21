@@ -28,7 +28,9 @@
   };
 
   var identity = function(val) {
-    return val;
+    return function() {
+      return val;
+    }
   };
 
   var lu = function() {
@@ -64,7 +66,7 @@
     };
 
     container.get = function(name) {
-      return registry[name];
+      return registry[name]();
     };
 
     return container;
