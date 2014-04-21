@@ -27,6 +27,10 @@
     return res;
   };
 
+  var identity = function(val) {
+    return val;
+  };
+
   var lu = function() {
     var registry = {},
       injectable,
@@ -44,7 +48,6 @@
       return injectable(deps, fn)();
     };
 
-    // register a singleton
     container.service = function(name, deps, fn) {
       registry[name] = memoize(injectable(deps, fn));
       return this;
@@ -55,8 +58,8 @@
       return this;
     };
 
-    container.value = function(name, value) {
-      registry[name] = value;
+    container.value = function(name, val) {
+      registry[name] = identity(val);
       return this;
     };
 

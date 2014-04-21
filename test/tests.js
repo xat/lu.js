@@ -20,7 +20,7 @@ describe('di', function() {
 
     container.value('myVal', 5);
 
-    container(['myService', 'myVal'], function(myService, myVal) {
+    container(['myService', 'myVal', 'myPolluter'], function(myService, myVal, myPolluter) {
       expect(myService.doSomething()).to.equal('test');
       expect(myVal).to.equal(5);
     });
