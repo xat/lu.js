@@ -2,6 +2,12 @@
 
 Lightweight dependency injection lib written in JavaScript.
 
+## Why?
+
+Because the guy who this lib was named after recommends ist!
+
+![Leo Unglaub](http://www.leo-unglaub.net/data/screenshots/lu.js.jpeg)
+
 ## Usage
 
 ```javascript
