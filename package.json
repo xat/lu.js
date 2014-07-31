@@ -1,6 +1,6 @@
 {
   "name": "lujs",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "minimalstic di library",
   "main": "lu.js",
   "directories": {
